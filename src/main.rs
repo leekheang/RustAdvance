@@ -30,5 +30,6 @@ fn main() {
     let obj = Object::new(57, 85);
     o.show();
     obj.show();
-    println!("{:?}", o);
+    println!("{:#?}", o);
+    println!("{:#?}", obj);
 }
