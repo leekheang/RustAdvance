@@ -14,6 +14,10 @@ impl Object {
             height,
         }
     }
+    fn show (&self) {
+        println!("{} * {} with area : {} ", self.width, self.height, self.area());
+    }
+    
 }
 
 fn main() {
@@ -22,6 +26,6 @@ fn main() {
         height: 55,
     };
     let obj = Object::new(57, 85);
-    println!("{} * {} with area : {} ", o.width, o.height, o.area());
-    println!("{} * {} with area : {} ", obj.width, obj.height, obj.area());
+    o.show();
+    obj.show();
 }
