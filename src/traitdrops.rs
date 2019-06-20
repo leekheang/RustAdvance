@@ -11,9 +11,9 @@ impl Drop for A {
 pub fn traitdrop(){
     let a = A{a: String::from("A")};
     {
-        let b = A{a: String::from("B")};
+        // let b = A{a: String::from("B")};
         {
-            let c = A{a: String::from("C")};
+            let _c = A{a: String::from("C")};
             println!("leaving inner scope 2");
         }
         println!("Leave inner scope 1");
